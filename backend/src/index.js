@@ -20,7 +20,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://chat-855xptg2x-shikhar12.vercel.app",
+      "https://chat-app-shikhar12.vercel.app",
+    ],
     credentials: true,
   })
 );
